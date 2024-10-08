@@ -1,6 +1,9 @@
+
 .square {
   /* Agrega tus estilos aquí */
   background-color: #f0f0f0;
   color: black;
+  width: 40px;
+  height: 40px;
   
 }
