@@ -1,9 +1,20 @@
+.info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
-.square {
-  /* Agrega tus estilos aquí */
-  background-color: #f0f0f0;
-  color: black;
-  width: 40px;
-  height: 40px;
+.cards-container{
+  width: 1200px;
   
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+img{  
+  border-radius: 50%;
+
 }
