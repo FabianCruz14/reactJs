@@ -27,19 +27,58 @@ const players = [
         weight: 84,
         nationality: 'Japanese'
     }
-]
-
-
+];
+                                                                 
 // despues exportamos la funcion por defecto en la cual usaremos 
 // la funcion map para poder acceder a los jugadores dinamicamente
 export default function InfoPlayer() {
     return (
-        <div>
-            <li>Name: {players.[1]}</li>
-            <li>Position: {players.position}</li>
-            <li>Age: 30 years </li>
-            <li>Height: 1.96m</li>
-            <li>Weight: 96kg</li>
+        <div className="players">
+
+            <div className="player">
+                <div className="pic">
+                    <img src="../public/michiel.webp" alt="Alessandro Michieletto" />
+                </div>
+                    <h2>{players[0].name}</h2>
+                    <li>Position: {players[0].position}</li>
+                    <li>Age: {players[0].age}</li>
+                    <li>Nationality: {players[0].nationality}</li>   
+
+                    <div className="height-weight">
+                        <li>Height: {players[0].height} mts</li>
+                        <li>Weight: {players[0].weight} kg</li>
+                    </div>
+            </div>
+
+            <div className="player">
+                <div className="pic">
+                    <img src="../public/darlan.webp" alt="Darlan Souza" />
+                </div>
+                    <h2>{players[1].name}</h2>
+                    <li>Position: {players[1].position}</li>
+                    <li>Age: {players[1].age}</li>
+                    <li>Nationality: {players[1].nationality}</li>   
+
+                    <div className="height-weight">
+                        <li>Height: {players[1].height} mts</li>
+                        <li>Weight: {players[1].weight} kg</li>
+                    </div>
+            </div>
+
+            <div className="player">
+                <div className="pic">
+                    <img src="../public/ran.jpg" alt="Ran Takahashi" />
+                </div>
+                    <h2>{players[2].name}</h2>
+                    <li>Position: {players[2].position}</li>
+                    <li>Age: {players[2].age}</li>
+                    <li>Nationality: {players[2].nationality}</li>   
+
+                    <div className="height-weight">
+                        <li>Height: {players[2].height} mts</li>
+                        <li>Weight: {players[2].weight} kg</li>
+                    </div>
+            </div>
         </div>
-    )
+    );
 }

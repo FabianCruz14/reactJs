@@ -5,16 +5,36 @@
   align-items: center;
 }
 
-.cards-container{
-  width: 1200px;
-  
+img{  
+  border-radius: 50%;
+  height: 250px;
+  width: 250px;
+}
+
+.players{
   display: flex;
   flex-direction: row;
+  width: 1000px;
+  height: auto;
+  margin-top: 50px;
+  padding: 35px;
+
   justify-content: space-between;
   align-items: center;
 }
 
-img{  
-  border-radius: 50%;
+.height-weight{
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none;
+}
 
+.player{
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  height: auto;
+  align-items: left;
 }

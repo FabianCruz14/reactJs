@@ -1,3 +1,4 @@
+// importamos la informacion de las cartas
 export default function Card() {
     return (
         <div className="card">
