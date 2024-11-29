@@ -1,18 +1,15 @@
 // crea una app donde muestre informacion sobre 3 jugadores de volei
 
-// creamos un arreglo de objetos, donde cada objeto sera un jugador
-// al que le asignaremos nombre, posicion, edad, altura, peso y nacionalidad
-
-
-// primero creamos una funcion donde le agregamos todas la props que necesitamos
-// esto es similar a cuando creamos clases y fuera de ella tenemos la clase o metodo constructor
+// primero creamos una funcion donde le agregamos todas la props que necesitamos, este caso, un array
+// esto es similar a cuando creamos clases, fuera de ella tenemos la clase o metodo constructor
 // en este caso, la funcion que se explorta por default
-
 
 function ProfilePlayer ({player}){
     return (
         <div className="player">
+            {/* accedemos a las props (que en realidad es un objeto) mediante . seguido de la prop  */}
             <h2>{player.name}</h2>
+            <img src="../react-app/src/componentes/img/michiel.webp" alt="" />
             <ul>
                 <li>
                     Position: {player.position}
@@ -25,6 +22,7 @@ function ProfilePlayer ({player}){
                 </li>
             </ul>
 
+        {/* creamos otro div para quitar el adorno del list */}
             <div className="height-weight">
                 <li>Height: {player.height}</li>
                 <li>Weight: {player.weight}</li>
@@ -39,6 +37,7 @@ export default function Galery (){
             <h1>BEST U23</h1>
             <ProfilePlayer player={
                 {
+                    id: 'michiel',
                     name: 'Alessandro Micheletto',
                     position: 'Outside Hitter',
                     age: 22,
